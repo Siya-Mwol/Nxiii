@@ -1,20 +1,22 @@
 require("dotenv").config();
-let oo = process.env.SUDO;
-let mm = process.env.MENTION_AUDIO;
-global.mentionaudio = mm.split(",");
+// SUDO,OWNER (split by comma)
+let oo = "918891871875";
+//---------------------------
 global.owner = oo.split(",");
 module.exports = {
-  mongodb: process.env.MONGODB_URL || "",
-  BOT_INFO: process.env.BOT_INFO || "X-BOT-MD;Aswin Sparky;https://graph.org/file/9b477aaa6b90bbb46e4be.mp4",
-  STICKER_DATA: process.env.STICKER_DATA || "X-BOTMD;ASWIN SPARKY",
-  SESSION_ID: process.env.SESSION_ID || "",
-  MENTION: process.env.MENTION || "true",
-  MENTION_DATA: process.env.MENTION_DATA || 'X-BOT-MD;MULTI-DEVICE BOT BY TEAM EX-BOT-Z;https://wa.me/917012984396;https://i.imgur.com/3cMVKBk.jpeg',
-  MENTION_AUDIO: global.mentionaudio,
-  AUTO_STATUS_VIEW: process.env.AUTO_STATUS_VIEW || "true",
-  AUTOBIO: process.env.AUTOBIO || "",
-  CAPTION: process.env.CAPTION || "X-BOT-MD V-2.00",
-  TENORAPI: process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c",
-  PORT: process.env.PORT || "9000",
-  PREFIX: process.env.PREFIX || ".",
+  // MUST FI IT
+  mongodb: "mongodb+srv://danielpeter:beka10beka10@cluster0.ef032ix.mongodb.net/?retryWrites=true&w=majority",// put your mongo db uri
+  SESSION_ID: "",// put your session id
+  //---------------------------------
+  BOT_INFO: "Nxiii;Nazim;https://i.imgur.com/XJ0D4Tq.mp4",
+  STICKER_DATA: "Nxiii;Nazim",
+  MENTION: "true",
+  MENTION_DATA: 'Nxiii;MULTI-DEVICE BOT BY TEAM SPAKY;https://wa.me/918891871875;https://i.imgur.com/P7HGkiK.png',
+  MENTION_AUDIO: "https://graph.org/file/1464256c054cd85844659.mp4,https://graph.org/file/9696d880c07fd9557dad7.mp4",
+  AUTO_STATUS_VIEW: "true",
+  AUTOBIO: "",
+  CAPTION: "Nxiii V-2.00",
+  TENORAPI: "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c",
+  PORT: "9000",
+  PREFIX: ".",
 };
