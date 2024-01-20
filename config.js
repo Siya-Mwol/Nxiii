@@ -5,7 +5,7 @@ let oo = "918891871875";
 global.owner = oo.split(",");
 module.exports = {
   // MUST FI IT
-  mongodb: "mongodb+srv://danielpeter:beka10beka10@cluster0.ef032ix.mongodb.net/?retryWrites=true&w=majority",// put your mongo db uri
+  mongodb: "",// put your mongo db uri
   SESSION_ID: "",// put your session id
   //---------------------------------
   BOT_INFO: "Nxiii;Nazim;https://i.imgur.com/XJ0D4Tq.mp4",
